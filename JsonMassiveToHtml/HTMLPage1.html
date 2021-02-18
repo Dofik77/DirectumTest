@@ -1,0 +1,74 @@
+﻿{% comment %} У тебя должен получить примерно такой файл: {% endcomment %}
+<form>
+    <input type="fill" value="Произвольные текст"/>
+    <label for="имя элемента">Label для элемента</label>
+    <input type="text" name="имя элемента" placeholder="Текст для placeholder" required value="" class="css-class"/>
+</form>
+
+{% comment %} И то :) У тебя, как мне кажется текст должен быть (string htmlText="и все, что я выше написал") {% endcomment %}
+{% comment %} По сути потом можно записать все в файл, но отталкиваться нужно от строки {% endcomment %}
+{% comment %} Потом можно будет просто заюзать какой-нибудь File.Write(..) {% endcomment %}
+{% comment %} Сначала советую с json разобраться как вытащить от туда правильно данные {% endcomment %}
+
+{% comment %} Вот это вще не то :) {% endcomment %}
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+</head>
+<body>
+    <table border=1>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>postmessage</th>
+                <th>items.0.type</th>
+                <th>items.0.attributes.message</th>
+                <th>items.1.type</th>
+                <th>items.1.attributes.name</th>
+                <th>items.1.attributes.placeholder</th>
+                <th>items.1.attributes.required</th>
+                <th>items.1.attributes.value</th>
+                <th>items.1.attributes.label</th>
+                <th>items.1.attributes.class</th>
+                <th>items.1.attributes.validationRules.0.type</th>
+                <th>items.1.attributes.disabled</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Название формы</td>
+                <td>Сообщение в случае успешного заполнения формы</td>
+                <td>filler</td>
+                <td>Произвольные текст</td>
+                <td>text</td>   
+                <td>Имя элемента</td>
+                <td>Текст для placeholder</td>
+                <td>true</td>
+                <td></td>
+                <td>Label для элемента</td>
+                <td>css-class</td>
+                <td>email</td>
+                <td>false</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+                <td>&nbsp</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+ {% endcomment %}
